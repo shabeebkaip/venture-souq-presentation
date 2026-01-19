@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+/* -------------------------------
+   THEME TOKENS (Luxury)
+-------------------------------- */
+@theme {
+  --color-background: #07070a; /* Obsidian */
+  --color-foreground: #f5f5f5;
+
+  --color-gold: #d6b15e;       /* Champagne Gold */
+  --color-gold-soft: #f3e7c9;  /* Soft highlight */
+
+  --animate-float: float 8s ease-in-out infinite;
+  --animate-glow: glow 3s ease-in-out infinite alternate;
+  --animate-slideUp: slideUp 0.7s ease-out;
+  --animate-fadeIn: fadeIn 0.9s ease-out;
+}
+
+/* -------------------------------
+   ANIMATIONS
+-------------------------------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes glow {
+  0% { opacity: 0.55; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(28px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* -------------------------------
+   UTILITIES
+-------------------------------- */
+@utility text-balance {
+  text-wrap: balance;
+}
+
+/* Premium glass card (Luxury) */
+@utility lux-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    0 22px 55px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Optional: Luxury divider line */
+@utility lux-divider {
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(214, 177, 94, 0.35),
+    transparent
+  );
+}
+
+/* Optional: Luxury gold glow (very soft) */
+@utility lux-gold-glow {
+  box-shadow: 0 0 60px rgba(214, 177, 94, 0.12);
+}
+
+/* Optional: Luxury text gradient */
+@utility lux-text-gradient {
+  background: linear-gradient(
+    90deg,
+    #f3e7c9 0%,
+    #d6b15e 45%,
+    #8b6b2d 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* -------------------------------
+   BASE
+-------------------------------- */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-foreground);
+  background: var(--color-background);
+  font-family: var(--font-manrope), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* -------------------------------
+   COMPONENT STYLES
+-------------------------------- */
+.lux-card {
+  transition: all 300ms ease;
+}
+
+.lux-card:hover {
+  border-color: rgba(214, 177, 94, 0.28);
+  box-shadow:
+    0 26px 70px rgba(0, 0, 0, 0.62),
+    0 0 0 1px rgba(214, 177, 94, 0.08);
+  transform: translateY(-2px);
+}
