@@ -68,7 +68,7 @@ export default function ClientsSection() {
         }} />
 
         {/* texture */}
-        <div className="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] [background-size:56px_56px]" />
+        <div className="absolute inset-0 opacity-[0.07] bg-[linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] bg-size-[56px_56px]" />
 
         {/* spotlight */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(214,177,94,0.10),transparent_55%)]" />
@@ -112,7 +112,7 @@ export default function ClientsSection() {
             viewport={{ once: true }}
             className="mt-8"
           >
-            <div className="relative rounded-3xl border border-white/10 bg-white/[0.04] p-6 overflow-hidden">
+            <div className="relative rounded-3xl border border-white/10 bg-white/4 p-6 overflow-hidden">
               <div className="absolute -top-20 -right-20 h-44 w-44 rounded-full bg-[#D6B15E]/12 blur-[80px]" />
 
               <p className="text-[#D6B15E] text-xs tracking-widest uppercase">
@@ -149,7 +149,7 @@ export default function ClientsSection() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="relative h-full rounded-3xl border border-white/10 bg-white/[0.04] p-5 overflow-hidden transition-all duration-300 hover:border-[#D6B15E]/35 hover:bg-white/[0.06]">
+                <div className="relative h-full rounded-3xl border border-white/10 bg-white/4 p-5 overflow-hidden transition-all duration-300 hover:border-[#D6B15E]/35 hover:bg-white/6">
                   {/* glow */}
                   <div className="absolute -top-20 -left-20 h-44 w-44 rounded-full bg-[#D6B15E]/12 blur-[70px] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 

@@ -50,28 +50,28 @@ export default function PackagesSection() {
   > = {
     soft: {
       border: 'border-white/10',
-      bg: 'bg-white/[0.03]',
+      bg: 'bg-white/3',
       icon: 'text-gray-200',
       tag: 'bg-white/10 text-gray-200',
       glow: 'bg-white/5',
     },
     gold: {
       border: 'border-[#D6B15E]/30',
-      bg: 'bg-linear-to-b from-[#D6B15E]/16 via-white/[0.04] to-transparent',
+      bg: 'bg-linear-to-b from-[#D6B15E]/16 via-white/4 to-transparent',
       icon: 'text-[#D6B15E]',
       tag: 'bg-[#D6B15E]/20 text-[#D6B15E]',
       glow: 'bg-[#D6B15E]/16',
     },
     darkgold: {
       border: 'border-[#D6B15E]/18',
-      bg: 'bg-white/[0.03]',
+      bg: 'bg-white/3',
       icon: 'text-[#D6B15E]',
       tag: 'bg-white/10 text-[#D6B15E]',
       glow: 'bg-[#D6B15E]/10',
     },
     neutral: {
       border: 'border-white/10',
-      bg: 'bg-white/[0.02]',
+      bg: 'bg-white/2',
       icon: 'text-gray-300',
       tag: 'bg-white/10 text-gray-300',
       glow: 'bg-white/5',
@@ -89,7 +89,7 @@ export default function PackagesSection() {
         <div className="absolute -bottom-44 right-1/4 h-[560px] w-[560px] rounded-full bg-white/5 blur-[180px]" />
 
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(214,177,94,0.12),transparent_55%)]" />
-        <div className="absolute inset-0 opacity-[0.06] [background-image:linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] [background-size:72px_72px]" />
+        <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] bg-size-[72px_72px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">

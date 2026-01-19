@@ -13,6 +13,7 @@ import {
 } from 'lucide-react'
 import Section from '@/components/Section'
 import SlideHeading from '@/components/SlideHeading'
+import Image from 'next/image'
 
 export default function ServicesOverviewSection() {
   const services = [
@@ -37,7 +38,7 @@ export default function ServicesOverviewSection() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(214,177,94,0.12),transparent_60%)]" />
 
         {/* subtle grid */}
-        <div className="absolute inset-0 opacity-[0.06] [background-image:linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] [background-size:64px_64px]" />
+        <div className="absolute inset-0 opacity-[0.06] bg-[linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] bg-size-[64px_64px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -79,7 +80,19 @@ export default function ServicesOverviewSection() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="relative rounded-[32px] border border-white/10 bg-white/[0.03] p-8 overflow-hidden">
+            <div className="relative rounded-[32px] border border-white/10 bg-white/3 overflow-hidden">
+              {/* Background Image */}
+              <div className="absolute inset-0">
+                <Image
+                  src="/dynamic-data-visualization-3d.jpg"
+                  alt="Services visualization"
+                  fill
+                  className="object-cover opacity-20"
+                />
+                <div className="absolute inset-0 bg-linear-to-b from-[#050505]/90 via-[#050505]/70 to-[#050505]/90" />
+              </div>
+
+              <div className="relative p-8">
               {/* Orbits */}
               <div className="absolute inset-0">
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] rounded-full border border-white/10 opacity-50" />
@@ -92,7 +105,7 @@ export default function ServicesOverviewSection() {
 
               {/* Center Core */}
               <div className="relative flex items-center justify-center">
-                <div className="relative w-[230px] h-[230px] rounded-full border border-[#D6B15E]/30 bg-linear-to-b from-[#D6B15E]/20 via-white/[0.04] to-transparent flex flex-col items-center justify-center text-center px-6">
+                <div className="relative w-[230px] h-[230px] rounded-full border border-[#D6B15E]/30 bg-linear-to-b from-[#D6B15E]/20 via-white/4 to-transparent flex flex-col items-center justify-center text-center px-6">
                   <p className="text-xs tracking-widest uppercase text-[#D6B15E]">
                     Core Partner
                   </p>
@@ -123,7 +136,7 @@ export default function ServicesOverviewSection() {
                       transition={{ duration: 0.45, delay: index * 0.06 }}
                       className="group"
                     >
-                      <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 hover:border-[#D6B15E]/30 hover:bg-white/[0.05] transition-all duration-300">
+                      <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/3 px-4 py-3 hover:border-[#D6B15E]/30 hover:bg-white/5 transition-all duration-300">
                         <div className="h-10 w-10 rounded-2xl border border-[#D6B15E]/25 bg-[#D6B15E]/10 flex items-center justify-center">
                           <Icon className="w-5 h-5 text-[#D6B15E]" />
                         </div>
@@ -134,6 +147,7 @@ export default function ServicesOverviewSection() {
                     </motion.div>
                   )
                 })}
+              </div>
               </div>
             </div>
           </motion.div>
@@ -146,7 +160,7 @@ export default function ServicesOverviewSection() {
             transition={{ duration: 0.7 }}
             className="space-y-6"
           >
-            <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7">
+            <div className="rounded-3xl border border-white/10 bg-white/3 p-7">
               <p className="text-[#D6B15E] text-xs tracking-widest uppercase">
                 What you get
               </p>

@@ -62,7 +62,7 @@ export default function ProblemSection() {
         <div className="absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-[#D6B15E]/10 blur-[140px]" />
         <div className="absolute -bottom-44 -right-40 h-[540px] w-[540px] rounded-full bg-red-500/10 blur-[160px]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(214,177,94,0.10),transparent_45%)]" />
-        <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] [background-size:48px_48px]" />
+        <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-size-[48px_48px]" />
       </div>
 
       <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -109,7 +109,7 @@ export default function ProblemSection() {
                   viewport={{ once: true }}
                   className="group"
                 >
-                  <div className="relative rounded-2xl border border-white/10 bg-white/[0.04] p-4 overflow-hidden transition-all duration-300 hover:border-[#D6B15E]/35 hover:bg-white/[0.06]">
+                  <div className="relative rounded-2xl border border-white/10 bg-white/4 p-4 overflow-hidden transition-all duration-300 hover:border-[#D6B15E]/35 hover:bg-white/6">
                     {/* glow */}
                     <div className="absolute -top-16 -right-16 h-40 w-40 rounded-full bg-[#D6B15E]/10 blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
@@ -174,10 +174,10 @@ export default function ProblemSection() {
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-white/[0.02] shadow-[0_20px_90px_rgba(0,0,0,0.55)]">
+          <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-white/2 shadow-[0_20px_90px_rgba(0,0,0,0.55)]">
             <div className="aspect-[4/5] relative">
               <Image
-                src="/3d-rendering-abstract-black-white-geometric-background.jpg"
+                src="/dark-fantasy-scene.jpg"
                 alt="Business complexity visualization"
                 fill
                 className="object-cover"
@@ -190,7 +190,7 @@ export default function ProblemSection() {
 
             {/* floating overlay cards */}
             <div className="absolute top-6 left-6 right-6 grid gap-3">
-              <div className="rounded-2xl border border-white/10 bg-white/[0.06] backdrop-blur-xl p-4">
+              <div className="rounded-2xl border border-white/10 bg-white/6 backdrop-blur-xl p-4">
                 <p className="text-xs tracking-widest uppercase text-[#D6B15E]">
                   Common Risk
                 </p>
@@ -202,7 +202,7 @@ export default function ProblemSection() {
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-white/10 bg-white/[0.05] backdrop-blur-xl p-4">
+              <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-4">
                 <p className="text-xs tracking-widest uppercase text-[#D6B15E]">
                   Founder Experience
                 </p>

@@ -121,7 +121,7 @@ export default function DifferentiatorsSection() {
                     {/* dot */}
                     <div className="absolute left-[14px] top-6 h-3.5 w-3.5 rounded-full bg-[#D6B15E] shadow-[0_0_0_6px_rgba(214,177,94,0.14)]" />
 
-                    <div className="group rounded-3xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.05] hover:border-[#D6B15E]/25 transition-all duration-300 p-6">
+                    <div className="group rounded-3xl border border-white/10 bg-white/3 hover:bg-white/5 hover:border-[#D6B15E]/25 transition-all duration-300 p-6">
                       <div className="flex items-start justify-between gap-6">
                         <div className="flex items-start gap-4">
                           <div className="h-12 w-12 rounded-2xl border border-[#D6B15E]/25 bg-[#D6B15E]/10 flex items-center justify-center">
@@ -160,7 +160,7 @@ export default function DifferentiatorsSection() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="relative"
           >
-            <div className="relative rounded-[28px] overflow-hidden border border-[#D6B15E]/20 bg-linear-to-b from-[#D6B15E]/12 via-white/[0.04] to-transparent p-7">
+            <div className="relative rounded-[28px] overflow-hidden border border-[#D6B15E]/20 bg-linear-to-b from-[#D6B15E]/12 via-white/4 to-transparent p-7">
               {/* glow */}
               <div className="absolute -top-20 -right-16 h-56 w-56 rounded-full bg-[#D6B15E]/20 blur-[100px]" />
 
@@ -188,7 +188,7 @@ export default function DifferentiatorsSection() {
                 ].map((x, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3"
+                    className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/3 px-4 py-3"
                   >
                     <span className="h-2 w-2 rounded-full bg-[#D6B15E]" />
                     <p className="text-sm text-gray-200">{x}</p>
