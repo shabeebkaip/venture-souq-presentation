@@ -136,51 +136,6 @@ export default function HeroSection() {
             </p>
           </div>
         </motion.div>
-
-        {/* Locations */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-          className="flex flex-wrap justify-center gap-8 text-gray-400 pt-8"
-        >
-          {[
-            { city: 'Riyadh', label: 'Capital Region' },
-            { city: 'Jeddah', label: 'Western Region' },
-            { city: 'Dammam', label: 'Eastern Region' }
-          ].map((location, index) => (
-            <motion.div
-              key={location.city}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
-              className="flex flex-col items-center gap-2 group cursor-default"
-            >
-              <MapPin className="w-5 h-5 text-[#D6B15E]/60 group-hover:text-[#D6B15E] transition-colors" />
-              <div className="text-center">
-                <div className="text-sm font-semibold text-gray-300 group-hover:text-white transition-colors">
-                  {location.city}
-                </div>
-                <div className="text-xs text-gray-500">
-                  {location.label}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-          className="pt-12"
-        >
-          <div className="flex flex-col items-center gap-2 animate-bounce">
-            <div className="text-xs text-gray-500 uppercase tracking-wider">Scroll to explore</div>
-            <div className="w-px h-12 bg-linear-to-b from-[#D6B15E]/50 to-transparent" />
-          </div>
-        </motion.div>
       </div>
     </Section>
   )

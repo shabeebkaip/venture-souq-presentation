@@ -12,7 +12,7 @@ interface SectionProps {
 
 export default function Section({ children, className = '', id, gradient = false }: SectionProps) {
   return (
-    <section id={id} className={`min-h-screen w-full flex items-center justify-center relative ${className}`}>
+    <section id={id} className={` w-full  relative ${className}`}>
       {gradient && (
         <div className="absolute inset-0 gradient-glow pointer-events-none" />
       )}

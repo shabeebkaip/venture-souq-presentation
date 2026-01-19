@@ -8,7 +8,7 @@ export default function CTASection() {
   const locations = [{ city: 'Riyadh' }, { city: 'Jeddah' }, { city: 'Dammam' }]
 
   return (
-    <Section className="relative overflow-hidden min-h-screen flex items-center">
+    <Section className="relative overflow-hidden  flex items-center">
       {/* Background (Fresh style) */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[#050505]" />

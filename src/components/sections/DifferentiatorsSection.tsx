@@ -56,6 +56,13 @@ export default function DifferentiatorsSection() {
         {/* diagonal luxury light */}
         <div className="absolute inset-0 bg-[conic-gradient(from_220deg_at_50%_20%,rgba(214,177,94,0.18),transparent_30%,rgba(214,177,94,0.10),transparent_70%)] opacity-30" />
 
+        {/* Floating Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#D6B15E08_1px,transparent_1px),linear-gradient(to_bottom,#D6B15E08_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_110%)]" />
+
+        {/* Subtle Lines */}
+        <div className="absolute top-1/3 left-0 right-0 h-px bg-linear-to-r from-transparent via-[#D6B15E]/15 to-transparent" />
+        <div className="absolute bottom-1/3 left-0 right-0 h-px bg-linear-to-r from-transparent via-[#F3E7C9]/15 to-transparent" />
+
         {/* soft vignette */}
         <div className="absolute inset-0 bg-linear-to-b from-black via-transparent to-black opacity-90" />
 

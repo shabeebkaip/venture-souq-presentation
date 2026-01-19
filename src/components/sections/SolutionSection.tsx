@@ -72,6 +72,18 @@ export default function SolutionSection() {
         {/* top spotlight */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(214,177,94,0.10),transparent_52%)]" />
 
+        {/* Hexagon Pattern */}
+        <div className="absolute inset-0 opacity-[0.02]" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l25.98 15v30L30 60 4.02 45V15z' fill='none' stroke='%23D6B15E' stroke-width='1'/%3E%3C/svg%3E")`,
+          backgroundSize: '60px 60px'
+        }} />
+
+        {/* Diagonal Lines Pattern */}
+        <div className="absolute inset-0 opacity-[0.015]" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40L40 0M20 40L40 20M0 20L20 0' stroke='%23F3E7C9' stroke-width='1' fill='none'/%3E%3C/svg%3E")`,
+          backgroundSize: '40px 40px'
+        }} />
+
         {/* subtle grid texture */}
         <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] [background-size:52px_52px]" />
       </div>

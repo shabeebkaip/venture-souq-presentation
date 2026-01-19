@@ -56,6 +56,17 @@ export default function ClientsSection() {
         <div className="absolute -top-44 -left-40 h-[520px] w-[520px] rounded-full bg-[#D6B15E]/12 blur-[150px]" />
         <div className="absolute -bottom-40 -right-44 h-[560px] w-[560px] rounded-full bg-white/5 blur-[170px]" />
 
+        {/* Radial Dot Pattern */}
+        <div className="absolute inset-0 opacity-[0.012]" style={{
+          backgroundImage: 'radial-gradient(circle, #D6B15E 1px, transparent 1px)',
+          backgroundSize: '30px 30px'
+        }} />
+
+        {/* Luxury Ornamental Corners */}
+        <div className="absolute top-0 right-0 w-64 h-64 opacity-[0.03]" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,0 L200,0 L200,20 L20,20 L20,200 L0,200 Z' fill='%23D6B15E'/%3E%3Cpath d='M0,40 L160,40 L160,60 L60,60 L60,160 L40,160 L40,40 Z' fill='%23F3E7C9'/%3E%3C/svg%3E")`
+        }} />
+
         {/* texture */}
         <div className="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] [background-size:56px_56px]" />
 
