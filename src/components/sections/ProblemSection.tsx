@@ -189,27 +189,27 @@ export default function ProblemSection() {
             </div>
 
             {/* floating overlay cards */}
-            <div className="absolute top-6 left-6 right-6 grid gap-3">
-              <div className="rounded-2xl border border-white/10 bg-white/6 backdrop-blur-xl p-4">
+            <div className="absolute top-4 left-4 right-4 lg:top-6 lg:left-6 lg:right-6 grid gap-2 lg:gap-3">
+              <div className="rounded-2xl border border-white/10 bg-white/6 backdrop-blur-xl p-3 lg:p-4">
                 <p className="text-xs tracking-widest uppercase text-[#D6B15E]">
                   Common Risk
                 </p>
-                <p className="text-white font-semibold mt-1">
+                <p className="text-white font-semibold mt-1 text-sm lg:text-base">
                   Delays compound fast
                 </p>
-                <p className="text-gray-400 text-sm mt-1">
+                <p className="text-gray-400 text-xs lg:text-sm mt-1">
                   One missed document can trigger weeks of follow-ups.
                 </p>
               </div>
 
-              <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-4">
+              <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-3 lg:p-4">
                 <p className="text-xs tracking-widest uppercase text-[#D6B15E]">
                   Founder Experience
                 </p>
-                <p className="text-white font-semibold mt-1">
+                <p className="text-white font-semibold mt-1 text-sm lg:text-base">
                   Too many parties, no ownership
                 </p>
-                <p className="text-gray-400 text-sm mt-1">
+                <p className="text-gray-400 text-xs lg:text-sm mt-1">
                   Legal, office, hiring, setup — all disconnected.
                 </p>
               </div>
