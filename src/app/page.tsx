@@ -16,7 +16,7 @@ export default function Home() {
       <ClientsSection />
       <DifferentiatorsSection />
       <ServicesOverviewSection />
-      <PackagesSection />
+      {/* <PackagesSection /> */}
       <CTASection />
 
     </main>
