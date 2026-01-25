@@ -34,7 +34,7 @@ export default function SolutionSection() {
       title: "Legal Documentation & Compliance",
       desc: "Contracts, policies, renewals, and regulatory clarity.",
       icon: FileText,
-      phase: "Phase 2",
+      phase: "Phase 3",
       timeline: "Week 3-5",
     },
     {
